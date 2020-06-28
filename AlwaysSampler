@@ -1,0 +1,15 @@
+
+@Bean
+    public AlwaysSampler defaultSampler()
+    {
+        return new AlwaysSampler();
+    }
+
+If the above code throws AlwaysSampler class not found use the below code
+
+
+
+@Bean
+public Sampler defaultSampler() {
+    return Sampler.ALWAYS_SAMPLE;
+}
